@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="b8c32f4f-85fc-478a-8bf8-4baf76178662" Version="5.0.0" Language="en-US" Publisher="ArkEcho" />
+        <Identity Id="1201e268-e3ec-4ba9-991d-6605235c7716" Version="5.0.0" Language="en-US" Publisher="ArkEcho" />
         <DisplayName>RockMargin</DisplayName>
-        <Description xml:space="preserve">Reincarnation of famous RockScroll extension for Visual Studio 2012-2022.</Description>
+        <Description xml:space="preserve">Reincarnation of famous RockScroll extension for Visual Studio 2022.</Description>
         <MoreInfo>https://github.com/ArkEcho/RockMargin</MoreInfo>
         <License>Info\license.rtf</License>
         <GettingStartedGuide>https://github.com/ArkEcho/RockMargin/blob/master/README.md</GettingStartedGuide>

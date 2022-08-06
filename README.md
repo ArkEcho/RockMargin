@@ -1,4 +1,5 @@
 Created by K1tty, ported to VS2022 by ArkEcho.
+Original Description by K1tty:
 
 # RockMargin
 
@@ -81,3 +82,7 @@ As result this extension works almost instantly on nowadays PC's with files up t
 **P.S:** I’d like to say thanks to [Scott Hanselman] who released RockScroll - great tool that completely changed the way I’m writing code in Visual Studio.
 
 [Scott Hanselman]: http://www.hanselman.com/blog/
+
+**P.S.S:** I would like to thank [K1tty] for creating this awesome Extension!
+
+[K1tty]: https://github.com/K1tty?tab=repositories
