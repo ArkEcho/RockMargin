@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="2fde119c-c777-469c-b39c-628d79ca8fd2" Version="5.0.0" Language="en-US" Publisher="ArkEcho, Kitty" />
+        <Identity Id="b8c32f4f-85fc-478a-8bf8-4baf76178662" Version="5.0.0" Language="en-US" Publisher="ArkEcho" />
         <DisplayName>RockMargin</DisplayName>
         <Description xml:space="preserve">Reincarnation of famous RockScroll extension for Visual Studio 2012-2022.</Description>
         <MoreInfo>https://github.com/ArkEcho/RockMargin</MoreInfo>
@@ -14,13 +14,13 @@
     </Metadata>
 
     <Installation>
-        <InstallationTarget Version="[16.0,18.0)" Id="Microsoft.VisualStudio.Enterprise">
+        <InstallationTarget Version="[17.0,18.0)" Id="Microsoft.VisualStudio.Enterprise">
             <ProductArchitecture>amd64</ProductArchitecture>
         </InstallationTarget>
-        <InstallationTarget Version="[16.0,18.0)" Id="Microsoft.VisualStudio.Pro">
+        <InstallationTarget Version="[17.0,18.0)" Id="Microsoft.VisualStudio.Pro">
             <ProductArchitecture>amd64</ProductArchitecture>
         </InstallationTarget>
-        <InstallationTarget Version="[16.0,18.0)" Id="Microsoft.VisualStudio.Community">
+        <InstallationTarget Version="[17.0,18.0)" Id="Microsoft.VisualStudio.Community">
             <ProductArchitecture>amd64</ProductArchitecture>
         </InstallationTarget>
     </Installation>

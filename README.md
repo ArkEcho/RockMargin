@@ -1,8 +1,4 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/kxjslttdyngh5hru?svg=true)](https://ci.appveyor.com/project/K1tty/rockmargin)
-[![Marketplace Version](https://vsmarketplacebadge.apphb.com/version-short/K1tty.RockMargin.svg)](https://marketplace.visualstudio.com/items?itemName=K1tty.RockMargin)
-[![Downloads](https://vsmarketplacebadge.apphb.com/downloads/K1tty.RockMargin.svg)](https://marketplace.visualstudio.com/items?itemName=K1tty.RockMargin)
-[![Installs](https://vsmarketplacebadge.apphb.com/installs/K1tty.RockMargin.svg)](https://marketplace.visualstudio.com/items?itemName=K1tty.RockMargin)
-[![Rating](https://vsmarketplacebadge.apphb.com/rating/K1tty.RockMargin.svg)](https://marketplace.visualstudio.com/items?itemName=K1tty.RockMargin)
+Created by K1tty, ported to VS2022 by ArkEcho.
 
 # RockMargin
 
@@ -10,7 +6,7 @@ Back in the VS 2005/2008 days I've found the tool that makes code navigation eas
 
 ---
 
-Download this extension from [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=K1tty.RockMargin#overview)
+Download this extension from [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ArkEcho.Rockmargin5)
 
 See the [change log](CHANGELOG.md) for changes history.
 
