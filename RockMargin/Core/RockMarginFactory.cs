@@ -39,7 +39,6 @@ namespace RockMargin
 		internal IServiceProvider ServiceProvider { get; set; }
 
 		private bool SettingsLoaded = false;
-		private bool PresenceSent = false;
 
 
 		public IWpfTextViewMargin CreateMargin(IWpfTextViewHost view_host, IWpfTextViewMargin container_margin)
@@ -51,12 +50,6 @@ namespace RockMargin
 				Utils.VSVersion = Assembly.GetCallingAssembly().GetName().Version.Major.ToString();
 			}
 			catch { }
-			
-			if (!PresenceSent)
-			{
-				PresenceSent = true;
-				MonitoringService.SendPresense();
-			}
 
 			if (!SettingsLoaded)
 				ReadSettings(OptionsService.GlobalOptions);

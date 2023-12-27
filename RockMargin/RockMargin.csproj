@@ -118,8 +118,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Changes\ChangeEnumerator.cs" />
-    <Compile Include="Core\IPLookup.cs" />
-    <Compile Include="Core\MonitoringService.cs" />
     <Compile Include="Core\Utils.cs" />
     <Compile Include="Marks\ColorExtractor.cs" />
     <Compile Include="Options\OptionsDefinition.cs" />
