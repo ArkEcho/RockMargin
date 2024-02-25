@@ -2,6 +2,9 @@
 
 These are changes to each version that has been released on the official [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
 
+#### 2022.5.0.1
+- Dropped Monitoring/Crash Report Service
+
 #### 2022.5
 - Enabled VS2022 support
 - Dropped Support for previous Versions, only support 64-bit

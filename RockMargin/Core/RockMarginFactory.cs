@@ -1,12 +1,12 @@
-﻿using System;
-using System.ComponentModel.Composition;
-using Microsoft.VisualStudio.Text.Editor;
-using Microsoft.VisualStudio.Utilities;
-using Microsoft.VisualStudio.Text.Classification;
-using Microsoft.VisualStudio.Text.Tagging;
-using Microsoft.VisualStudio.Text.Operations;
-using Microsoft.VisualStudio.Shell;
+﻿using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
+using Microsoft.VisualStudio.Text.Classification;
+using Microsoft.VisualStudio.Text.Editor;
+using Microsoft.VisualStudio.Text.Operations;
+using Microsoft.VisualStudio.Text.Tagging;
+using Microsoft.VisualStudio.Utilities;
+using System;
+using System.ComponentModel.Composition;
 using System.Reflection;
 
 
@@ -18,7 +18,7 @@ namespace RockMargin
 	[Order(After = PredefinedMarginNames.VerticalScrollBar)]
 	[ContentType("text")]
 	[TextViewRole(PredefinedTextViewRoles.Document)]
-	internal sealed class RockMarginFactory: IWpfTextViewMarginProvider
+	internal sealed class RockMarginFactory : IWpfTextViewMarginProvider
 	{
 		[Import]
 		public IViewTagAggregatorFactoryService AggregatorFactoryService { get; set; }
@@ -39,24 +39,16 @@ namespace RockMargin
 		internal IServiceProvider ServiceProvider { get; set; }
 
 		private bool SettingsLoaded = false;
-		private bool PresenceSent = false;
-
 
 		public IWpfTextViewMargin CreateMargin(IWpfTextViewHost view_host, IWpfTextViewMargin container_margin)
 		{
 			IWpfTextView text_view = view_host.TextView;
-			
+
 			try
 			{
 				Utils.VSVersion = Assembly.GetCallingAssembly().GetName().Version.Major.ToString();
 			}
 			catch { }
-			
-			if (!PresenceSent)
-			{
-				PresenceSent = true;
-				MonitoringService.SendPresense();
-			}
 
 			if (!SettingsLoaded)
 				ReadSettings(OptionsService.GlobalOptions);
