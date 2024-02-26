@@ -1,13 +1,13 @@
-﻿using System;
-using System.Windows.Controls;
-using System.Windows.Media;
-using Microsoft.VisualStudio.Text.Editor;
+﻿using Microsoft.VisualStudio.Text.Editor;
+using System;
 using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Input;
+using System.Windows.Media;
 
 namespace RockMargin
 {
-	class RockMargin: Canvas, IWpfTextViewMargin
+	class RockMargin : Canvas, IWpfTextViewMargin
 	{
 		public const string MarginName = "RockMargin";
 		private IWpfTextView _view;
@@ -52,7 +52,7 @@ namespace RockMargin
 			this.MouseLeftButtonUp += this.OnMouseLeftButtonUp;
 			this.MouseMove += this.OnMouseMove;
 
-			_render.Visuals.ForEach(delegate(Visual v) { AddVisualChild(v); });
+			_render.Visuals.ForEach(delegate (Visual v) { AddVisualChild(v); });
 		}
 
 		protected override int VisualChildrenCount

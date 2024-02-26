@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
+using Microsoft.VisualStudio.Text;
 using Microsoft.VisualStudio.Text.Classification;
 using Microsoft.VisualStudio.Text.Editor;
 using Microsoft.VisualStudio.Text.Operations;
@@ -33,6 +34,9 @@ namespace RockMargin
 		internal IEditorOptionsFactoryService OptionsService { get; set; }
 
 		[Import]
+		public ITextDocumentFactoryService textDocumentFactory { get; set; }
+
+		[Import]
 		internal IEditorFormatMapService FormatMapService { get; set; }
 
 		[Import(typeof(SVsServiceProvider))]
@@ -55,10 +59,12 @@ namespace RockMargin
 
 			RemoveVerticalScrollBar(container_margin);
 
+			var dte = ServiceProvider.GetService(typeof(EnvDTE.DTE)) as EnvDTE.DTE;
+
 			var navigator = TextStructureNavigatorService.GetTextStructureNavigator(text_view.TextBuffer);
 			var format = FormatMapService.GetEditorFormatMap(text_view);
 			var tagger = HighlightWordTagger.Instance(text_view, format, TextSearchService, navigator);
-			var marks_enumerator = new MarksEnumerator(AggregatorFactoryService, text_view);
+			var marks_enumerator = new MarksEnumerator(AggregatorFactoryService, dte, textDocumentFactory, text_view);
 			var change_enumerator = new ChangeEnumerator(AggregatorFactoryService, text_view);
 			var words_enumerator = new HighlightedWordsEnumerator(text_view, tagger);
 
