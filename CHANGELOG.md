@@ -3,7 +3,7 @@
 These are changes to each version that has been released on the official [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
 
 #### 2022.5.0.2
-- Fixed Breakpoints marks not showing up
+- Fixed Breakpoints marks
 
 #### 2022.5.0.1
 - Dropped Monitoring/Crash Report Service

@@ -109,6 +109,9 @@ namespace RockMargin
 
         private void BreakpointTimer_Elapsed(object sender, ElapsedEventArgs e)
         {
+            // If there is a way to check for changed Breakpoints, feel free to do a PR!
+            // For many hours I've researched Stackoverflow, ChatGPT and Github Copilot.
+            // All came to the same conclusion, that the only way is to poll with a timer, and check if the list hast changed...
             try
             {
                 List<Breakpoint> actualBreakpoints = getBreakpoints();
