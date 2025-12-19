@@ -3,30 +3,30 @@
     <Metadata>
         <Identity Id="135BBAC0-D233-431A-B7D0-58DE30F41A07" Version="6.0.0" Language="en-US" Publisher="ArkEcho" />
         <DisplayName>RockMargin</DisplayName>
-        <Description xml:space="preserve">Reincarnation of famous RockScroll extension for Visual Studio 2022.</Description>
+        <Description xml:space="preserve">Reincarnation of famous RockScroll extension for Visual Studio 2022 &amp; 2026.</Description>
         <MoreInfo>https://github.com/ArkEcho/RockMargin</MoreInfo>
         <License>Info\license.rtf</License>
         <GettingStartedGuide>https://github.com/ArkEcho/RockMargin/blob/master/README.md</GettingStartedGuide>
         <ReleaseNotes>https://github.com/ArkEcho/RockMargin/blob/master/CHANGELOG.md</ReleaseNotes>
         <Icon>Info\icon.png</Icon>
         <PreviewImage>Info\preview_image.png</PreviewImage>
-        <Tags>Navigation, ScrollBar, Text Editor, Highlight, Margin, RockScroll, VS2022</Tags>
+        <Tags>Navigation, ScrollBar, Text Editor, Highlight, Margin, RockScroll, VS2022, VS2026</Tags>
     </Metadata>
 
     <Installation>
-        <InstallationTarget Version="[17.0,18.0)" Id="Microsoft.VisualStudio.Enterprise">
+        <InstallationTarget Version="[17.0,18.0]" Id="Microsoft.VisualStudio.Enterprise">
             <ProductArchitecture>amd64</ProductArchitecture>
         </InstallationTarget>
-        <InstallationTarget Version="[17.0,18.0)" Id="Microsoft.VisualStudio.Pro">
+        <InstallationTarget Version="[17.0,18.0]" Id="Microsoft.VisualStudio.Pro">
             <ProductArchitecture>amd64</ProductArchitecture>
         </InstallationTarget>
-        <InstallationTarget Version="[17.0,18.0)" Id="Microsoft.VisualStudio.Community">
+        <InstallationTarget Version="[17.0,18.0]" Id="Microsoft.VisualStudio.Community">
             <ProductArchitecture>amd64</ProductArchitecture>
         </InstallationTarget>
     </Installation>
 
     <Prerequisites>
-        <Prerequisite Id="Microsoft.Net.Component.4.8.SDK" Version="[17.0.31804.368,18.0)" DisplayName=".NET Framework 4.8 SDK" />
+        <Prerequisite Id="Microsoft.Net.Component.4.8.SDK" Version="[17.0.31804.368,18.0]" DisplayName=".NET Framework 4.8 SDK" />
     </Prerequisites>
 
     <Assets>
